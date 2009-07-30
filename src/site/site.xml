@@ -1,0 +1,47 @@
+<project name="Bean Validator">
+
+	<skin>
+    		<groupId>org.apache.tapestry</groupId>
+	    	<artifactId>maven-skin</artifactId>
+    		<version>1.1</version>
+	</skin>
+
+	<bannerLeft>
+		<name>Bean Validator</name>
+		<href>http://www.tzavellas.com/projects/bean-validator</href>
+	</bannerLeft>
+
+	<publishDate format="dd MMM yyyy" />
+	<body>
+		<head>
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+				try {
+				var pageTracker = _gat._getTracker("UA-1911771-1");
+				pageTracker._trackPageview();
+				} catch(err) {}
+			</script>
+		</head>
+		
+		<links>
+			<item name="Blog" href="http://www.tzavellas.com/techblog/"/>
+			<item name="Projects" href="http://www.tzavellas.com/techblog/projects/"/>
+		</links>
+	
+		<menu name="Quick Links">
+			<item name="Main" href="index.html"/>
+			<item name="FAQ" href="faq.html"/>
+			<item name="Javadocs" href="apidocs/index.html"/>
+			<item name="License" href="license.html"/>
+			<item name="Source Code" href="http://github.com/sptz45/bean-validator/tree/master"/>
+			<item name="Related Projects" href="related.html"/>
+		</menu>
+		
+		<menu ref="reports"/>
+		
+	</body>
+  
+</project>

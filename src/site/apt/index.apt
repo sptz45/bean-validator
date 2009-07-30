@@ -1,0 +1,24 @@
+                  ----------------
+                    Introduction
+                  ----------------
+                  Spiros Tzavellas
+                  ----------------
+                      May 2007
+                  ----------------
+ 
+ 
+Introduction
+ 
+  <Simple Bean Validator> is a library for validating JavaBeans based on a Java
+  internal DSL (Domain Specific Language).
+  
+  For more information read the {{{faq.html}FAQ}} and the {{{apidocs/index.html}API specification}}.
+
+
+News
+
+	* <<July 2007:>> New <<release 0.8>> with API changes and important bugfixes.
+
+	* <<May 2007:>> First public release.
+
+	[] 

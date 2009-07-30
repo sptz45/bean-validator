@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<faqs id="FAQ" title="Frequently Asked Questions">
+  <part id="General">
+    <faq id="Why">
+      <question>Why yet another Java validation framework?</question>
+      <answer>
+        <p>
+          This project started as an attemp to explore internal domain specific languages in
+          Java, after reading the paper <a href="http://www.jmock.org/oopsla2006.pdf">
+          Evolving an Embedded Domain-Specific Language in Java</a>, by Steve Freeman and Nat Pryce
+          (OOPSLA 2006).
+        </p>
+        <p>
+          The project's goal is to provide a simple, pure Java, validator with an API that is easy
+          to read, easy to program and feels like a special purpose validation language.
+        </p> 
+      </answer>
+    </faq>
+    <faq id="How">
+      <question>How do I use the validation DSL?</question>
+      <answer>
+        <p>
+          Use the <a href="apidocs/com/tzavellas/validation/BeanValidator.html">BeanValidator</a>
+          and import all the static methods from the
+          <a href="apidocs/com/tzavellas/validation/Validators.html">Validators</a> class.
+          <source>
+          import static com.tzavellas.validation.Validators.*;
+          import com.tzavellas.validation.BeanValidator;
+          
+          BeanValidator validator = new BeanValidator(
+                    string("firstName").required(),
+                    string("lastName").required(),
+                    string("email").required().email(),
+                    integer("age").min(18),
+                    date("birthdate").past());
+          </source>
+        </p>
+      </answer>
+    </faq>
+    <faq id="threads">
+      <question>Are BeanValidator instances thread-safe?</question>
+      <answer>
+        <p>
+          Yes, multiple threads can access concurrently the same
+          <a href="apidocs/com/tzavellas/validation/BeanValidator.html">BeanValidator</a> instance. 
+        </p>
+      </answer>
+    </faq>
+    <faq id="spring">
+      <question>Can I use this library with the Spring Framework and Spring-MVC?</question>
+      <answer>
+        <p>
+          Yes!
+        </p>
+        <p>
+          See the <tt>SpringValidator</tt>'s
+          <a href="apidocs/com/tzavellas/validation/spring/SpringValidator.html">documentation</a> for more details. 
+        </p>
+      </answer>
+    </faq>
+  </part>
+</faqs>
