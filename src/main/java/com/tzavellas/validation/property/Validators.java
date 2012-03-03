@@ -50,7 +50,6 @@ public abstract class Validators {
 	 * 
 	 * @param name the name of the property
 	 */
-	@SuppressWarnings("unchecked")
 	public static LinkedValidatorBuilder<Object, LinkedValidatorBuilder> property(String name) {
 		return new LinkedValidatorBuilder<Object, LinkedValidatorBuilder>(name);
 	}

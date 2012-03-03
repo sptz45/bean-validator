@@ -102,8 +102,7 @@ public class SpringValidator implements Validator {
 	 * {@inheritDoc}
 	 */
 	@Override
-	@SuppressWarnings("unchecked")
-	public boolean supports(Class clazz) {
+	public boolean supports(Class<?> clazz) {
 		return supportedClass.isAssignableFrom(clazz);
 	}
 
